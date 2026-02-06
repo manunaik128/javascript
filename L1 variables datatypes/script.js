@@ -91,3 +91,15 @@ const product ={
 };
 
 console.log(product);
+
+//practice set 2
+
+const profile ={
+    name:"@shraddhakhapra",
+    followers:569,
+    isFollow:true,
+    following:580,
+};
+console.log(profile);
+console.log(typeof profile);
+console.log(typeof isFollow);
