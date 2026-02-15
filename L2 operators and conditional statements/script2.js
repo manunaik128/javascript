@@ -105,7 +105,7 @@ else{
 }
 
 //even odd num finding
-let num =10;
+let num =5;
 
 if (num%2==0){
     console.log(num, "is even");
@@ -113,3 +113,30 @@ if (num%2==0){
 } else{
     console.log(num, "is odd");
 }
+
+//else if statement
+let background = "dark";
+let col;
+
+if(background === "dark"){
+    col ="black";
+} else if(background === "blue"){
+    col = "blue";
+}else if(background === "red"){
+    col ="red";
+} else{
+    col ="white"
+}
+
+console.log(col);
+
+if (background==="dark") {
+    console.log(background);
+}
+
+
+//ternary Operator condition?true output :false output
+
+age =27;
+let result =age>18 ? "adult" : "not a adult"
+console.log(result);
