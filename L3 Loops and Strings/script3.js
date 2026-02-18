@@ -59,3 +59,15 @@ for(let num=0;num<=100;num++){
         console.log("num is=",num)
     }
 }
+
+//Practice qst 2
+
+let gameNum =30;
+
+let userNum=prompt("Guess the game Number");
+console.log(userNum);
+
+while(userNum != gameNum){
+    userNum=prompt("You entered wrong number,Guess again!!");
+}
+console.log("You entered the right number");
