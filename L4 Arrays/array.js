@@ -33,17 +33,17 @@ console.log(`avg marks of the class =${avg}`);
 // practice qst2
 // adding discount on items 10% and printing final price //using for loop
 let items =[250,645,300,900,50];
-let i=0;
-for(let val of items){
-    console.log(`value at  index ${i}=${val}`);
-    let offer = val /10;
-    items[i]=items[i]-offer;
-    console.log(`value after offer =${items[i]}`)
-    i++;
-}
-
-// for(let i=0;i<items;i++){
-
+// let i=0;
+// for(let val of items){
+//     let offer = val /10; 
+//     items[i]=items[i]-offer;
+//     console.log(`value after offer =${items[i]}`)
+//     i++;
 // }
 
+for(let i=0;i<items.length;i++){ //using for loops
+let offer =items[i]/10;
+items[i]-=offer;
+}
+console.log(items);
 
