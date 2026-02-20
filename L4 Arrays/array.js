@@ -6,10 +6,10 @@ console.log(marks.length);
 marks[0]=85;
 console.log(marks);
 
-let heros=["spiderman","superman","hulk","ironman","antman","captain"]; //printing all elements by using loops
+let sheros=["spiderman","superman","hulk","ironman","antman","captain"]; //printing all elements by using loops
 
-for(let i=0;i<heros.length;i++){
-    console.log(heros[i]);
+for(let i=0;i<sheros.length;i++){
+    console.log(sheros[i]);
 }
 
 //by using for of  loop to print array elements
@@ -47,3 +47,47 @@ items[i]-=offer;
 }
 console.log(items);
 
+//Array methods
+//push():add to end
+//pop():delete from end & return
+//toString():converts array to string
+
+
+// push
+let foodItems=["apple","banana","orange","tomato"];
+foodItems.push("mango","onion","chilly");
+console.log(foodItems);
+
+//pop
+let deletedItem=foodItems.pop();
+console.log("deleted",deletedItem);
+
+//toString
+console.log(foodItems);
+console.log(foodItems.toString()); //changes array items into string
+
+//concat():joins multiple array & returns result
+//unshift():add to start
+//shift():delete from start & return
+
+//concat 
+let marvelHeros=["thor","captain","spidy",];
+let dcHeros=["superman","batman"];
+// let=indianHeros=["krish","shaktiman"];
+// let heros=marvelHeros.concat(dcHeros,indianHeros);  //also we can combine 3 arrays
+let heros=marvelHeros.concat(dcHeros);
+console.log(heros);
+
+//unshift()
+let indHeros=["salman","yash","sudeep"];
+indHeros.unshift("darshan"); //it adds element to first index
+console.log(indHeros);
+
+let val =indHeros.shift();
+console.log("deleted",val); //it will delete and print the first value
+// console.log(indHeros);
+
+//slice(): return a piece of the array = slice(startIdx,endIdx)
+//splice(): change original array(add,remove,replace)=  splice(startIdx,delCount,newEl1)
+
+//slice
