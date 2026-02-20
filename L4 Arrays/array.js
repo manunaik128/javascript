@@ -87,7 +87,39 @@ let val =indHeros.shift();
 console.log("deleted",val); //it will delete and print the first value
 // console.log(indHeros);
 
-//slice(): return a piece of the array = slice(startIdx,endIdx)
+//slice(): return a piece of the array = slice(startIdx,endIdx) it does not change in original array
 //splice(): change original array(add,remove,replace)=  splice(startIdx,delCount,newEl1)
 
 //slice
+let marvel_heros=["spiderman","superman","hulk","ironman","antman","captain"];
+
+console.log(marvel_heros);
+
+console.log(marvel_heros.slice(1,3)); //it prints 2 items 1 to 2 item
+// console.log(marvel_heros.slice());
+
+//splice
+let arr=[1,2,3,4,5,6,7];
+ //delete 2nd index element and add new elements in the position
+
+arr.splice(2,2,101,102);
+
+//add elements
+ //chnaging in particualr index
+arr.splice(2,0,102);
+console.log(arr);
+
+// delete elements
+arr.splice(3,1); 
+
+
+// practice qst1
+
+let companies =["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+
+//companies.shift();    //removes first company
+// companies.splice(1,1,"Ola");  //removes uber and place there ola
+// companies.push("Amezon");
+// console.log(companies);
+
+
