@@ -72,7 +72,20 @@ return count;
 }
 
 
-//for each loop in arrays
+//for each loop in arrays works with array
 //arr.forEach(callBackFunction)
 //callbackFunction:Here,it is a function to execute for each element in the array
 //defination="A callback is a function passed as an argument to another function"
+
+/*function abc(){
+    console.log("hello")
+}
+function myfunc(abc){
+    return abc;
+}*/
+
+let arr =[1,2,3,4,5];
+
+arr.forEach(function printVal(val){ //value at each index
+console.log(val );
+})
